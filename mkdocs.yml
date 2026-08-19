@@ -30,6 +30,7 @@ nav:
       - Create Account: getting-started/create-account.md
       - Verify Account: getting-started/verify-account.md
       - Setup MFA: getting-started/mfa-setup.md
+      - Image Best Practices: getting-started/best-practices-images.md
   - Account Setup:
       - Overview: account-setup/index.md
       - Billing & Payments: account-setup/billing.md
