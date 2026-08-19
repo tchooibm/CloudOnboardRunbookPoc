@@ -1,0 +1,26 @@
+# Python Virtual Environment
+# Safe to exclude everything - it's reproducible from requirements.txt
+venv/
+
+# MkDocs
+site/
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local

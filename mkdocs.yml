@@ -1,0 +1,71 @@
+site_name: MyCloud Onboarding Runbook
+site_url: https://tchooibm.github.io/CloudOnboardRunbookPoc/
+site_description: Comprehensive onboarding guide for MyCloud platform
+repo_url: https://github.com/tchooibm/CloudOnboardRunbookPoc
+repo_name: CloudOnboardRunbookPoc
+
+theme:
+  name: material
+  favicon: https://img.icons8.com/?size=100&id=n-6PakmAMkgj&format=png&color=000000
+  logo: https://img.icons8.com/?size=100&id=n-6PakmAMkgj&format=png&color=000000
+  palette:
+    - scheme: light
+      primary: blue
+      accent: light-blue
+    - scheme: dark
+      primary: blue
+      accent: light-blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Overview: getting-started/index.md
+      - Create Account: getting-started/create-account.md
+      - Verify Account: getting-started/verify-account.md
+      - Setup MFA: getting-started/mfa-setup.md
+  - Account Setup:
+      - Overview: account-setup/index.md
+      - Billing & Payments: account-setup/billing.md
+      - API Keys: account-setup/api-keys.md
+      - IAM Roles: account-setup/iam-roles.md
+  - Infrastructure:
+      - Overview: infrastructure/index.md
+      - Compute:
+          - First VM: infrastructure/compute/first-vm.md
+      - Storage:
+          - Storage Buckets: infrastructure/storage/buckets.md
+      - Networking:
+          - Virtual Networks: infrastructure/networking/vnets.md
+  - Security:
+      - Overview: security/index.md
+      - Audit Logging: security/audit-logging.md
+  - Troubleshooting:
+      - Overview: troubleshooting/index.md
+      - Authentication: troubleshooting/authentication.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      use_pygments: true
+
+plugins:
+  - search:
+      lang: en
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mycloud
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/mycloud
